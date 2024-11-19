@@ -6,10 +6,11 @@
   "action": {
     "default_popup": "popup/popup.html",
     "default_icon": {
-      "16": "images/favicon.png",
-      "48": "images/favicon.png",
+      "16": "images/favicon16.png",
+      "32": "images/favicon32.png",
+      "48": "images/favicon48.png",
       "64": "images/favicon64.png",
-      "128": "images/favicon.png"
+      "128": "images/favicon128.png"
     }
   },
   "content_scripts": [
