@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "UnAI Search Flagger",
+  "description": "An extension to remove googles AI generated responses from search results.",
+  "version": "0.1.0",
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "images/favicon.png",
+      "48": "images/favicon.png",
+      "64": "images/favicon64.png",
+      "128": "images/favicon.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "./background.js",
+    "type": "module"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "webNavigation",
+    "tabs"
+  ]
+}

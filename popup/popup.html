@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <title>UnAI Search Flagger</title>
+    <style>
+        body { width: 200px; font-family: Arial, sans-serif; padding: 10px; }
+        button { width: 100%; padding: 10px; background-color: #4CAF50; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #45a049; }
+        hr { margin: 15px 0; }
+        label { display: block; margin: 5px 0; }
+    </style>
+</head>
+<body>
+    <h2>UnAI</h2>
+    <p>Enable or Disable the Google's AI responses in your searches</p>
+    <button id="toggleAI">Enable AI responses</button>
+    <hr>
+
+    <h3>Filter results by file type</h3>
+    <label>
+        <input id="all" type="radio" name="fileType" value="all" /> All
+    </label>
+    <label>
+        <input id="pdf" type="radio" name="fileType" value="pdf" /> PDF
+    </label>
+    <label>
+        <input id="image" type="radio" name="fileType" value="image" /> Image (JPG, PNG, etc.)
+    </label>
+    <label>
+        <input id="txt" type="radio" name="fileType" value="txt" /> Text File
+    </label>
+    <label>
+        <input id="doc" type="radio" name="fileType" value="doc" /> Word Document
+    </label>
+    <label>
+        <input id="ppt" type="radio" name="fileType" value="ppt" /> PowerPoint Presentation
+    </label>
+
+    <script src="popup.js"></script>
+</body>
+</html>
